@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(data => {
                 console.log(data);
                 alert("Pesanan telah dikirim!. Pesanan akan kami proses secepatnya dan akan kami informasikan lebih lanjut melalui WhatsApp, Terima Kasih. 🙂🙏🏼");
+                form.reset();
             })
             .catch(error => {
                 console.error('There has been a problem with your fetch operation:', error);
